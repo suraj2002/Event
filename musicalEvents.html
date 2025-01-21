@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Musical Concerts</title>
+        <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+      width: 100%;
+      background-color: #cccaca;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-block;
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+body {
+    background-color: #e6e6fa;
+}
+nav {
+      display: inline-block;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown:after {
+      content: "";
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-height: auto;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      top: 100%; 
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 15px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color:#aee07e;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+.wrapper{
+    width: 200%;
+    min-height: 200vh;
+    overflow: hidden;
+    background-color:#e6e6fa;
+}
+.row{
+    width: 100%;
+    padding: 50px 100px;
+}
+.image-section{
+    width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.content{
+    width: 60%;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+}
+.content h1{
+    font-size: 80px;
+    letter-spacing: 3px;
+    margin-top: 25px;
+     color: #222;
+}
+.content h2{
+    font-size: 200%;
+    font-family: sans-serif;
+    color: purple;
+    margin-top: 25px;
+}
+.content p{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.gallery {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .gallery h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4b0082;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: calc(33.333% - 20px);
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid img {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid img {
+                width: 100%;
+            }
+        }
+        footer {
+        background-color: #aee07e;
+        padding: 30px 0;
+        text-align: center;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-content, .social-media {
+        flex: 1;
+      }
+
+      .footer-content h3, .social-media h3 {
+        margin-bottom: 15px;
+      }
+
+      .social-media ul {
+        list-style: none;
+        display: contents;
+        justify-content: center;
+      }
+
+      .social-media ul li {
+        margin: 0 10px;
+      }
+
+      .social-media ul li a {
+        color: #333;
+        font-size: 24px;
+      }
+
+      .copyright {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+
+    
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=dvice-width, imitial-scale=1.0">
+        <link rel="stylesheet"  href="about.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">PVPS Events</div>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Events</a>
+                <div class="dropdown-content">
+                  <a href="weddingEvents.html">Wedding Events</a>
+                  <a href="corporateEvents.html">Corporate Events</a>
+                  <a href="musicalEvents.html">Musical Concerts</a>
+                  <a href="movieEvents.html">Movie Events</a>
+                </div>
+              </li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="newbookingpage.html">Book an Event</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <br>
+        <div class="wrapper">
+            <div class="row">
+                <div class="image-section">
+                    <img src="me1.jpg">
+                </div>
+                <div class="content">
+                    <h1>Musical Concerts</h1><br><br>
+                    <p>Musical concerts are gatherings or performances centered around live music, designed to entertain, inspire, and engage audiences through the power of sound. These events can vary in size, from intimate concerts featuring local talent to large-scale festivals with international artists. Whether it's a classical concert, a jazz performance, a rock show, or an electronic music festival, musical events offer unique experiences that celebrate the art of music and bring people together.
+
+                      <br>Musical concerts provide an excellent platform for both established and emerging artists to showcase their talents, connect with fans, and create memorable experiences. They can serve as opportunities for cultural exchange, creativity, and community building. Beyond the performances themselves, musical events often feature activities like workshops, meet-and-greets, and interactive sessions that further enrich the attendee experience.
+                      
+                      <br>By hosting musical events, companies and organizations can promote artistic expression, support local music scenes, and create an atmosphere of excitement and unity among attendees.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="me2.jpg" alt="Wedding Event 1">
+                <img src="me3.jpeg" alt="Wedding Event 2">
+                <img src="me4.jpeg" alt="Wedding Event 3">
+                <img src="me5.jpeg" alt="Wedding Event 4">
+            </div>
+        </div>
+
+    </body>
+    </html>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <h3>Contact Us:</h3>
+            <p>
+              Your Company Name<br>
+              Your Address<br>
+              Phone: (123) 456-7890<br>
+              Email: yourEmail@example.com
+            </p>
+          </div>
+          <div class="social-media">
+            <h3>Follow Us:</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f">Facebook</i></a></li>
+              <li><a href="https://www.twitter.com/"><i class="fab fa-twitter">Twitter</i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fab fa-instagram">Instagram</i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+        </div>
+      </footer>

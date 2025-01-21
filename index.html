@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>P V P S</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .container {
+      width: 100%;
+      background-color: #cccaca;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-block;
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+
+    nav {
+      display: inline-block;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+
+    .video-container {
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    .background-video {
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+
+    .about-us {
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    .about-us h2 {
+      margin-bottom: 10px;
+    }
+
+    .about-us p {
+      line-height: 1.6;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown:after {
+      content: "";
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      top: 100%; 
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 15px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color:#aee07e;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .container2 {
+      display: flex;
+      justify-content: space-between; 
+      width: 80%;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .box {
+      width: 23%;
+      background-color: #aee07e;
+      padding: 50px;
+      border-radius: 5px;
+      text-align: center;
+      margin: 10px 0; 
+    }
+
+    .box a {
+      text-decoration: none;
+      color: #333;
+    }
+
+    .box a:hover {
+      color: #ff0000;
+    }
+
+    .why-join {
+          text-align: center;
+          margin: 20px;
+      }
+
+      .why-join-container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+      }
+
+      .join-box {
+          width: 30%;
+          padding: 20px;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+          text-align: center;
+      }
+
+      .join-box img {
+          max-width: 100px;
+          margin-bottom: 10px;
+      }
+
+      .join-box h3 {
+          margin-bottom: 10px;
+      }
+
+      footer {
+        background-color: #aee07e;
+        padding: 30px 0;
+        text-align: center;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-content, .social-media {
+        flex: 1;
+      }
+
+      .footer-content h3, .social-media h3 {
+        margin-bottom: 15px;
+      }
+
+      .social-media ul {
+        list-style: none;
+        display: contents;
+        justify-content: center;
+      }
+
+      .social-media ul li {
+        margin: 0 10px;
+      }
+
+      .social-media ul li a {
+        color: #333;
+        font-size: 24px;
+      }
+
+      .copyright {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="logo">PVPS Events</div>
+    <nav>
+    <li><a href="index.html">Home</a></li>
+      <ul>
+        <li class="dropdown">
+          <a href="#">Events</a>
+          <div class="dropdown-content">
+            <a href="weddingEvents.html">Wedding Events</a>
+            <a href="corporateEvents.html">Corporate Events</a>
+            <a href="musicalEvents.html">Musical Concerts</a>
+            <a href="movieEvents.html">Movie Events</a>
+          </div>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="newbookingpage.html">Book an Event</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="video-container">
+    <video class="background-video" autoplay muted loop src="HomePage Bg.mp4"></video>
+  </div>
+  <div class="about-us">
+    <h2>About Us</h2>
+    <p>We transform your vision into reality, crafting unforgettable events of all kinds. From dream weddings and high-powered corporate functions to captivating musical experiences and red-carpet movie premieres, we handle every detail with meticulous planning and flawless execution.  Our comprehensive services go beyond venue selection and logistics. We curate exceptional catering experiences, manage entertainment, and ensure a seamless flow for a truly remarkable occasion. Let us orchestrate your next event, big or small, and create memories that last a lifetime.</p>
+  </div>
+
+
+  <div class="container2">
+    <div class="box">
+      <h2><a href="#">Weddings</a></h2>
+      <p>Celebrate your special day with unforgettable memories.</p>
+    </div>
+    <div class="box">
+      <h2><a href="#">Corporate Events</a></h2>
+      <p>Leave a lasting impression with professional gatherings.</p>
+    </div>
+    <div class="box">
+      <h2><a href="#">Musical Events</a></h2>
+      <p>Experience the magic of live music with our expertise.</p>
+    </div>
+    <div class="box">
+      <h2><a href="#">Movie Events</a></h2>
+      <p>Create a red-carpet experience for your upcoming film.</p>
+    </div>
+  </div>
+
+  <br><br>
+
+  <section class="why-join">
+    <h2>Why you should choose us</h2>
+      <div class="why-join-container">
+      <div class="join-box">
+        <img src="sample.png" alt="Image">
+        <h3>World Class Speakers</h3>
+        <p>We are equipped with world class speakers and visual equipments for a villa party to a wedding up to a full corporate event. New Image Events will make sure that every event is an event to remember.</p>
+      </div>
+      <div class="join-box">
+          <img src="sample.png" alt="Image">
+          <h3>Best Experience</h3>
+          <p>New Image Events planning team will leave no stone unturned to give you the best experience and strive to create a long lasting impact in all your events.</p>
+      </div>
+      <div class="join-box">
+          <img src="sample.png" alt="Image">
+          <h3>Best Management</h3>
+          <p>New Image Events offers the best management service in an exquisite manner with respect to serving the precise needs of our clients.</p>
+      </div>
+      <div class="join-box">
+          <img src="sample.png" alt="Image">
+          <h3>Modern Venue</h3>
+          <p>We have modern venue provisions for your event, whether it's to host your special business or corporate conference, birthday parties, indoor sports, full wedding ceremony or reception. New Image Events gives you the ideal venue.</p>
+      </div>
+      <div class="join-box">
+          <img src="sample.png" alt="Image">
+          <h3>Well Support</h3>
+          <p>New Image Events provide sufficient assistance and support to turn every conceived idea into a successful reality.</p>
+      </div>
+      <div class="join-box">
+          <img src="sample.png" alt="Image">
+          <h3>Good Staff</h3>
+          <p>Our staff members will help you to achieve your goals and extend the possibilities of what you can do. Our staff members would help you manage your event and look presentable, sharp, and professional at all times.</p>
+      </div>
+      </div>
+  </section>
+<hr>
+</body>
+</html>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <h3>Contact Us:</h3>
+      <p>
+        Your Company Name<br>
+        Your Address<br>
+        Phone: (123) 456-7890<br>
+        Email: yourEmail@example.com
+      </p>
+    </div>
+    <div class="social-media">
+      <h3>Follow Us:</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f">Facebook</i></a></li>
+        <li><a href="https://www.twitter.com/"><i class="fab fa-twitter">Twitter</i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram">Instagram</i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+  </div>
+</footer>

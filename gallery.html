@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .container1 {
+      width: 100%;
+      background-color: #cccaca;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-block;
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+        
+        nav {
+      display: inline-block;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown:after {
+      content: "";
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      top: 100%; 
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 15px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color:#aee07e;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+        h1 {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+        .img-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 10px;
+            padding: 20px;
+            width: 100%;
+            max-width: 1200px;
+            box-sizing: border-box;
+        }
+        .img-gallery img {
+            width: 100%;
+            height: auto;
+            cursor: pointer;
+            transition: transform 0.2s;
+            border-radius: 10px;
+        }
+        .img-gallery img:hover {
+            transform: scale(1.05);
+        }
+        .full-img {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .full-img img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+        }
+        .full-img span {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            color: white;
+            cursor: pointer;
+        }
+        footer {
+        background-color: #aee07e;
+        padding: 30px 0;
+        text-align: center;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-content, .social-media {
+        flex: 1;
+      }
+
+      .footer-content h3, .social-media h3 {
+        margin-bottom: 15px;
+      }
+
+      .social-media ul {
+        list-style: none;
+        display: contents;
+        justify-content: center;
+      }
+
+      .social-media ul li {
+        margin: 0 10px;
+      }
+
+      .social-media ul li a {
+        color: #333;
+        font-size: 24px;
+      }
+
+      .copyright {
+        text-align: center;
+        margin-top: 20px;
+      }
+    </style>
+</head>
+<body>
+
+<div class="container1">
+    <div class="logo">PVPS Events</div>
+<nav>
+      <ul>
+      <li><a href="index.html">Home</a></li>
+        <li class="dropdown">
+          <a href="#">Events</a>
+          <div class="dropdown-content">
+            <a href="weddingEvents.html">Wedding Events</a>
+            <a href="#">Corporate Events</a>
+            <a href="#">Musical Concerts</a>
+            <a href="#">Movie Events</a>
+          </div>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="newbookingpage.html">Book an Event</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+
+    <div class="full-img" id="fullImgBox">
+        <img src="" id="fullImg">
+        <span onclick="closeFullImg()">X</span>
+    </div>
+
+    <h1>Wedding Events</h1>
+    <div class="img-gallery">
+        <img src="C:/Users/Lenovo/Downloads/kerala-wedding.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/wedding-events-decorators-at-labhgarh-palace-udaipur.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/99c14a84cc20d4bc0a7b6217c9ab862a.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/c826e8a8fb6986c66c27240e68447e50.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/unnamed-1-1.webp" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/72241d24-e14d-4cca-98a6-9af1d06b95cf.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    <h1>Corporate Events</h1>
+    <div class="img-gallery">
+        <img src="C:/Users/Lenovo/Downloads/corporate-events-.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/coportae 4.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/corporate 3.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/corporate 5.avif" onclick="openFullImg(this.src)">
+    </div>
+
+    <h1>Movies Events</h1>
+    <div class="img-gallery">
+        <img src="C:/Users/Lenovo/Downloads/ss.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/Sandeep-Reddy-Vanga-Mahesh-Babu-Ranbir-Kapoor-SS-Rajamouli-@-Animal-Movie-Pre-Release-Event.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/RRR-Chennai-pre-release-event-1200by667.webp" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/1309614797-nimg-puri.gif" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/li.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/Darbar Movie Pre-Release Event Photos 02_10.jpg" onclick="openFullImg(this.src)">
+        <img src="C:/Users/Lenovo/Downloads/hq720.jpg" onclick="openFullImg(this.src)">
+    </div>
+
+    <h1> Music Events </h1>
+    <div class="img-gallery">
+        <img src=>
+        <img src=>
+        <img src=>
+        <img src=>
+        <img src=>
+    </div>
+
+    <script>
+        function openFullImg(src) {
+            document.getElementById('fullImgBox').style.display = 'flex';
+            document.getElementById('fullImg').src = src;
+        }
+
+        function closeFullImg() {
+            document.getElementById('fullImgBox').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-content">
+      <h3>Contact Us:</h3>
+      <p>
+        Your Company Name<br>
+        Your Address<br>
+        Phone: (123) 456-7890<br>
+        Email: yourEmail@example.com
+      </p>
+    </div>
+    <div class="social-media">
+      <h3>Follow Us:</h3>
+      <ul>
+        <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f">Facebook</i></a></li>
+        <li><a href="https://www.twitter.com/"><i class="fab fa-twitter">Twitter</i></a></li>
+        <li><a href="https://www.instagram.com/"><i class="fab fa-instagram">Instagram</i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+  </div>
+</footer>

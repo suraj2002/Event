@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Corporate Events</title>
+        <style>
+        *{
+    margin: 0%;
+    padding: 0%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+      width: 100%;
+      background-color: #cccaca;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .logo {
+      display: inline-block;
+      background-color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 20px;
+    }
+body {
+    background-color: #e6e6fa;
+}
+nav {
+      display: inline-block;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: inline-block;
+    }
+
+    nav li {
+      display: inline-block;
+      margin: 0 10px;
+      position: relative;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      padding: 10px 15px;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #ddd;
+    }
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown:after {
+      content: "";
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-height: auto;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      top: 100%; 
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 15px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color:#aee07e;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+.wrapper{
+    width: 200%;
+    min-height: 200vh;
+    overflow: hidden;
+    background-color:#e6e6fa;
+}
+.row{
+    width: 100%;
+    padding: 50px 100px;
+}
+.image-section{
+    width: 100%;
+            max-width: 500px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.image-section img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.content{
+    width: 60%;
+    height: auto;
+    float: left;
+    margin-left: 50px;
+}
+.content h1{
+    font-size: 80px;
+    letter-spacing: 3px;
+    margin-top: 25px;
+     color: #222;
+}
+.content h2{
+    font-size: 200%;
+    font-family: sans-serif;
+    color: purple;
+    margin-top: 25px;
+}
+.content p{
+    font-size: 20px;
+    font-family: sans-serif;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+.gallery {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .gallery h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #4b0082;
+        }
+
+        .gallery-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .gallery-grid img {
+            width: calc(33.333% - 20px);
+            max-width: 300px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @media (max-width: 768px) {
+            .gallery-grid img {
+                width: calc(50% - 20px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .gallery-grid img {
+                width: 100%;
+            }
+        }
+        footer {
+        background-color: #aee07e;
+        padding: 30px 0;
+        text-align: center;
+      }
+
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .footer-content, .social-media {
+        flex: 1;
+      }
+
+      .footer-content h3, .social-media h3 {
+        margin-bottom: 15px;
+      }
+
+      .social-media ul {
+        list-style: none;
+        display: contents;
+        justify-content: center;
+      }
+
+      .social-media ul li {
+        margin: 0 10px;
+      }
+
+      .social-media ul li a {
+        color: #333;
+        font-size: 24px;
+      }
+
+      .copyright {
+        text-align: center;
+        margin-top: 20px;
+      }
+
+
+    
+        </style>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=dvice-width, imitial-scale=1.0">
+        <link rel="stylesheet"  href="about.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="logo">PVPS Events</div>
+        <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li class="dropdown">
+                <a href="#">Events</a>
+                <div class="dropdown-content">
+                  <a href="weddingEvents.html">Wedding Events</a>
+                  <a href="corporateEvents.html">Corporate Events</a>
+                  <a href="musicalEvents.html">Musical Concerts</a>
+                  <a href="movieEvents.html">Movie Events</a>
+                </div>
+              </li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="newbookingpage.html">Book an Event</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </nav>
+          <br>
+        <div class="wrapper">
+            <div class="row">
+                <div class="image-section">
+                    <img src="ce1.jpg">
+                </div>
+                <div class="content">
+                    <h1>Corporate Events</h1><br><br>
+                    <p>Corporate events are essential tools for strengthening internal relationships, fostering teamwork, and promoting a company's values and objectives. These events can be tailored to specific goals, including employee recognition, networking, learning opportunities, or product showcases. Whether it's a conference, seminar, team-building activity, or corporate celebration, each event is designed to engage participants, facilitate communication, and enhance collaboration.
+
+                     <br> Well-organized corporate events not only serve as an avenue for knowledge sharing and professional growth but also help in building lasting connections with clients, partners, and other industry professionals. They create an atmosphere of inclusivity and excitement, offering unique opportunities to highlight a company's achievements and innovation. By hosting impactful corporate events, businesses can strengthen their brand presence, boost employee morale, and cultivate a culture of innovation and success.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="gallery">
+            <h2>Gallery</h2>
+            <div class="gallery-grid">
+                <img src="ce2.jpg" alt="Wedding Event 1">
+                <img src="ce3.jpeg" alt="Wedding Event 2">
+                <img src="ce4.jpeg" alt="Wedding Event 3">
+                <img src="ce5.jpeg" alt="Wedding Event 4">
+                <img src="ce6.jpeg" alt="Wedding Event 5">
+            </div>
+        </div>
+
+    </body>
+    </html>
+
+    <footer>
+        <div class="footer-container">
+          <div class="footer-content">
+            <h3>Contact Us:</h3>
+            <p>
+              Your Company Name<br>
+              Your Address<br>
+              Phone: (123) 456-7890<br>
+              Email: yourEmail@example.com
+            </p>
+          </div>
+          <div class="social-media">
+            <h3>Follow Us:</h3>
+            <ul>
+              <li><a href="https://www.facebook.com/"><i class="fab fa-facebook-f">Facebook</i></a></li>
+              <li><a href="https://www.twitter.com/"><i class="fab fa-twitter">Twitter</i></a></li>
+              <li><a href="https://www.instagram.com/"><i class="fab fa-instagram">Instagram</i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="copyright">
+          <p>&copy; 2024 Your Company Name. All Rights Reserved.</p>
+        </div>
+      </footer>
